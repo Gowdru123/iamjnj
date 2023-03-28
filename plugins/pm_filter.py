@@ -1476,7 +1476,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs Wʜᴀᴛ I Fᴏᴜɴᴅ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}.</b>"
+        cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search} </b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 ➢ {message.chat.title} </i></b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐏𝐄𝐑𝐒𝐎𝐍 ➢ {message.from_user.mention}\n</i></b>\n©️@ROCKERSBACKUP"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
@@ -1485,17 +1485,15 @@ async def auto_filter(client, msg, spoll=False):
                 hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
                 try:
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
+                        await asyncio.sleep(60)
                         await hehe.delete()
-                        await message.delete()
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await hehe.delete()
-                        await message.delete()
+                        await asyncio.sleep(60)
+                        await hehe.delete()                       
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nFᴏʀ Mᴏᴠɪᴇs, Jᴏɪɴ @free_movies_all_languages</b>")
@@ -1505,17 +1503,15 @@ async def auto_filter(client, msg, spoll=False):
                 hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
                 try:
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await hmm.delete()
-                        await message.delete()
+                        await asyncio.sleep(60)
+                        await hmm.delete()                       
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await hmm.delete()
-                        await message.delete()
+                        await asyncio.sleep(60)
+                        await hmm.delete()                      
         except Exception as e:
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nFᴏʀ Mᴏᴠɪᴇs, Jᴏɪɴ @free_movies_all_languages</b>")
@@ -1524,17 +1520,15 @@ async def auto_filter(client, msg, spoll=False):
                 fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
                 try:
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await fek.delete()
-                        await message.delete()
+                        await asyncio.sleep(60)
+                        await fek.delete()                        
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await fek.delete()
-                        await message.delete()
+                        await asyncio.sleep(60)
+                        await fek.delete()                       
     else:
         if message.chat.id == SUPPORT_CHAT_ID:
             await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nFᴏʀ Mᴏᴠɪᴇs, Jᴏɪɴ @free_movies_all_languages</b>")
@@ -1542,17 +1536,15 @@ async def auto_filter(client, msg, spoll=False):
             fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
-                    await asyncio.sleep(600)
-                    await fuk.delete()
-                    await message.delete()
+                    await asyncio.sleep(60)
+                    await fuk.delete()                   
             except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
                 await save_group_settings(grpid, 'auto_delete', True)
                 settings = await get_settings(message.chat.id)
                 if settings['auto_delete']:
-                    await asyncio.sleep(600)
-                    await fuk.delete()
-                    await message.delete()
+                    await asyncio.sleep(60)
+                    await fuk.delete()                   
     if spoll:
         await msg.message.delete()
 
