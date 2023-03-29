@@ -61,7 +61,7 @@ async def pm_text(bot, message):
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
-    await message.reply_text("<b>Yᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ᴍʏ ᴍᴏᴅᴇʀᴀᴛᴏʀs !</b>")
+    await message.reply_text("<b>ur request movie available here join and ask @JN_MOVIE_REQUIST_GROUP</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
@@ -144,20 +144,12 @@ async def next_page(bot, query):
     try:
         if settings['auto_delete']:
             btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
-                ]
-            )
-
-        else:
-            btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
-                ]
-            )
+                 [
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
+                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
+                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
+                 ] 
+              )            
                 
     except KeyError:
         grpid = await active_connection(str(query.message.from_user.id))
