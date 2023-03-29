@@ -1781,7 +1781,8 @@ async def global_filters(client, message, text=False):
                                 reply_to_message_id=reply_id
                             )
                             await asyncio.sleep(30) 
-                            await hmm.delete() 
+                            await hmm.delete()
+                            await message.delete()
 
                     elif btn == "[]":
                         oto = await client.send_cached_media(
@@ -1792,6 +1793,7 @@ async def global_filters(client, message, text=False):
                         )
                         await asyncio.sleep(30) 
                         await oto.delete() 
+                        await message.delete()
 
                     else:
                         button = eval(btn)
@@ -1803,6 +1805,7 @@ async def global_filters(client, message, text=False):
                         )
                         await asyncio.sleep(30) 
                         await dlt.delete() 
+                        await message.delete()
 
                 except Exception as e:
                     logger.exception(e)
