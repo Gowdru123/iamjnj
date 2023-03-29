@@ -46,10 +46,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('🔥 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐠𝐫𝐨𝐮𝐩 🔥', url=GRP_LNK)
+                    InlineKeyboardButton('🔥 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐠𝐫𝐨𝐮𝐩 🔥', url=f"https://t.me/JN_MOVIE_REQUIST_GROUP")
                   ],[
                     InlineKeyboardButton('🥵𝐀𝐝𝐮𝐥𝐭 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 ', url=f"https://t.me/+LC3GZ8HoeM0zMmZl"),          
-                    InlineKeyboardButton('🔈𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞🔈', url=CHNL_LNK)
+                    InlineKeyboardButton('🔈𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞🔈', url=f"https://t.me/+D7L-rX9lKA43MGRl")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -89,10 +89,10 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('🔥 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐠𝐫𝐨𝐮𝐩 🔥', url=GRP_LNK)
+                    InlineKeyboardButton('🔥 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐠𝐫𝐨𝐮𝐩 🔥', url=f"https://t.me/JN_MOVIE_REQUIST_GROUP")
                   ],[
                     InlineKeyboardButton('🥵𝐀𝐝𝐮𝐥𝐭 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 ', url=f"https://t.me/+LC3GZ8HoeM0zMmZl"),          
-                    InlineKeyboardButton('🔈𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞🔈', url=CHNL_LNK)
+                    InlineKeyboardButton('🔈𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞🔈', url=f"https://t.me/JN_MOVIE_REQUIST_GROUP")
                   ]]                                                         
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
