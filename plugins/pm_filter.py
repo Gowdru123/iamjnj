@@ -1780,6 +1780,8 @@ async def global_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
+                            await asyncio.sleep(30) 
+                            await hmm.delete() 
 
                     elif btn == "[]":
                         oto = await client.send_cached_media(
@@ -1788,6 +1790,8 @@ async def global_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
+                        await asyncio.sleep(30) 
+                        await oto.delete() 
 
                     else:
                         button = eval(btn)
@@ -1797,6 +1801,8 @@ async def global_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
+                        await asyncio.sleep(30) 
+                        await .delete() 
 
                 except Exception as e:
                     logger.exception(e)
