@@ -761,7 +761,7 @@ async def send_msg(bot, message):
             else:
                 success = False
             if success:
-                await message.reply_text(f"<b>Your message has been successfully send to {user.mention}.</b>")
+                await message.reply_text(f"<b>𝐔𝐫 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐦𝐨𝐯𝐢𝐞 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐢𝐧 𝐭𝐡𝐢𝐬 𝐠𝐫𝐨𝐮𝐩 𝐉𝐨𝐢𝐧 𝐚𝐧𝐝 𝐚𝐬𝐤 https://t.me/JN_MOVIE_REQUIST_GROUP.</b>")
             else:
                 await message.reply_text("<b>This user didn't started this bot yet !</b>")
         except Exception as e:
