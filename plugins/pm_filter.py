@@ -155,22 +155,24 @@ async def next_page(bot, query):
         grpid = await active_connection(str(query.message.from_user.id))
         await save_group_settings(grpid, 'auto_delete', True)
         settings = await get_settings(query.message.chat.id)
-        if settings['auto_delete']:
+        if settings['auto_delete']:        
             btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
-                ]
-            )
+                 [
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
+                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
+                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
+                 ] 
+              )
+            
 
         else:
             btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
-                ]
-            )
+                 [
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
+                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
+                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
+                 ] 
+              )
     try:
         settings = await get_settings(query.message.chat.id)
         if settings['max_btn']:
@@ -260,9 +262,6 @@ async def next_page(bot, query):
                         InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
-    btn.insert(0, [
-        InlineKeyboardButton("🥵 adult channel", url=f"https://t.me/+LC3GZ8HoeM0zMmZl")
-    ])
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
@@ -1362,47 +1361,45 @@ async def auto_filter(client, msg, spoll=False):
             ]
 
     try:
-        if settings['auto_delete']:
+        if settings['auto_delete']:                                                                                       
             btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
-                ]
-            )
+                 [
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
+                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
+                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
+                 ] 
+              )
 
-        else:
+        else:                                                     
             btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
-                ]
-            )
+                 [
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
+                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
+                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
+                 ] 
+              )
                 
     except KeyError:
         grpid = await active_connection(str(message.from_user.id))
         await save_group_settings(grpid, 'auto_delete', True)
         settings = await get_settings(message.chat.id)
-        if settings['auto_delete']:
+        if settings['auto_delete']:                                                                        
             btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
-                ]
-            )
+                 [
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
+                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
+                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
+                 ] 
+              )
 
-        else:
+        else:                                                                   
             btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
-                ]
-            )
-
-    btn.insert(0, [
-        InlineKeyboardButton("🥵 adult channel ", url=f"https://t.me/+LC3GZ8HoeM0zMmZl")
-    ])
+                 [
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
+                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
+                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
+                 ] 
+              )
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
