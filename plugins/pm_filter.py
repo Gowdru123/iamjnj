@@ -1802,7 +1802,7 @@ async def global_filters(client, message, text=False):
                             reply_to_message_id=reply_id
                         )
                         await asyncio.sleep(30) 
-                        await .delete() 
+                        await dlt.delete() 
 
                 except Exception as e:
                     logger.exception(e)
