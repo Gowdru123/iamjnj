@@ -145,10 +145,8 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                  [
-                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
-                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
-                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
-                 ] 
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9')
+                 ]
               )            
                 
     except KeyError:
@@ -158,20 +156,16 @@ async def next_page(bot, query):
         if settings['auto_delete']:        
             btn.insert(0, 
                  [
-                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
-                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
-                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
-                 ] 
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9')
+                 ]
               )
             
 
         else:
             btn.insert(0, 
                  [
-                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
-                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
-                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
-                 ] 
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9')
+                 ]
               )
     try:
         settings = await get_settings(query.message.chat.id)
@@ -1361,19 +1355,15 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:                                                                                       
             btn.insert(0, 
                  [
-                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
-                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
-                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
-                 ] 
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9')
+                 ]
               )
 
         else:                                                     
             btn.insert(0, 
                  [
-                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
-                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
-                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
-                 ] 
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9')
+                 ]
               )
                 
     except KeyError:
@@ -1383,19 +1373,15 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:                                                                        
             btn.insert(0, 
                  [
-                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
-                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
-                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
-                 ] 
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9')
+                 ]
               )
 
         else:                                                                   
             btn.insert(0, 
                  [
-                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9'),
-                    InlineKeyboardButton(text="18+ adult channel 🥵", url='https://t.me/+LC3GZ8HoeM0zMmZl'), 
-                    InlineKeyboardButton(text="🔥 𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞", url='https://t.me/+D7L-rX9lKA43MGRl') 
-                 ] 
+                    InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9')
+                 ]
               )
 
     if offset != "":
