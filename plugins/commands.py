@@ -50,6 +50,8 @@ async def start(client, message):
                   ],[
                     InlineKeyboardButton('🥵𝐀𝐝𝐮𝐥𝐭 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 ', url=f"https://t.me/+LC3GZ8HoeM0zMmZl"),          
                     InlineKeyboardButton('🔈𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞🔈', url=f"https://t.me/+D7L-rX9lKA43MGRl")
+                  ].[
+                     InlineKeyboardButton('🤑 earn money through  this bot 🤑', url=f"https://t.me/Beastonejnanesh")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -93,6 +95,8 @@ async def start(client, message):
                   ],[
                     InlineKeyboardButton('🥵𝐀𝐝𝐮𝐥𝐭 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 ', url=f"https://t.me/+LC3GZ8HoeM0zMmZl"),          
                     InlineKeyboardButton('🔈𝐍𝐞𝐰 𝐦𝐨𝐯𝐢𝐞🔈', url=f"https://t.me/JN_MOVIE_REQUIST_GROUP")
+                  ].[
+                    InlineKeyboardButton('🤑 earn money through  this bot 🤑', url=f"https://t.me/Beastonejnanesh")
                   ]]                                                         
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
